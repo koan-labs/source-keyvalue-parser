@@ -33,7 +33,7 @@ Which will return the following:
 }
 ```
 
-The parser will attempt `parseFloat()` any string value that can be cast to a number otherwise, everything is just strings.
+The parser will attempt `parseFloat()` any string value that can be cast to a number, otherwise everything is just strings.
 
 Happy parsing everybody!
 
@@ -53,9 +53,15 @@ This gives you the option of using different compilation flags/options as detail
 References
 ------
 http://pegjs.org/documentation
+
 https://developer.valvesoftware.com/wiki/KeyValues
+
 https://github.com/rossengeorgiev/vdf-parser
+
 https://github.com/devinwl/keyvalues-php
+
 https://github.com/lukezbihlyj/vdf-parser
+
 https://github.com/RJacksonm1/node-vdf
+
 http://codereview.stackexchange.com/questions/61135/parsing-valve-key-value-files
