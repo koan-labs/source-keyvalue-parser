@@ -1,7 +1,7 @@
 [![License](https://img.shields.io/badge/license-mit-blue.svg)](https://opensource.org/licenses/MIT)
 vdf-parser-js
 ======
-vdf-parser-js is parser for the source engine's key-value.txt files written in PEG.js. It allows for conversion of source's KeyValue.txt file format into JSON objects. 
+vdf-parser-js is parser for the source engine's key-value.txt files written in PEG.js. It allows for conversion of source's KeyValue or VDF file format into JSON objects. 
 
 History/Background
 ------
@@ -9,10 +9,10 @@ The KeyValues format, a.k.a. Valve Data Format is used in the Source engine to s
 
 Simple Usage
 -----
-To use the compiled parser simply require it into your node project. The file you're looking for is `kv-parser.js` in `./dist`. 
+To use the compiled parser simply require it into your node project. The file you're looking for is `vdf-parser.js` in `./dist`. 
 
 Here's a simple usage example. This can also be found in the `./examples` directory.
-```
+```javascript
 var fs = require('fs');
 var vdf_parser = require("../dist/vdf-parser.js")
 var targetpath = "./test_vdf.txt"
@@ -21,7 +21,7 @@ var parsed = vdf_parser.parse(file);
 console.log(JSON.stringify(parsed, null, 2))
 ```
 Which will return the following:
-```
+```json
 {
   "firstKeyName": {
     "testValue": "please ignore",
